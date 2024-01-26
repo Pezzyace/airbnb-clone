@@ -1,11 +1,11 @@
-import Img from '../assets/img2.png';
 
-export default function Card() {
+
+export default function Card(props) {
   return(
     <div className="card">
       <div>
         <img 
-          src={Img} 
+          src={props.img} 
           alt="Katie Zaferes" className="card-image"
         />
         {/* <p className="info">Sold out</p> */}
@@ -18,12 +18,12 @@ export default function Card() {
           alt="star icon" 
           className="card-star"
         />
-        <span>5.0</span>
-        <span className="gray">(6) .</span>
-        <span className="gray">USA</span>
+        <span className="rating">{props.rating}</span>
+        <span className="gray">({props.reviewCount}) </span>
+        <span className="gray">{props.country}</span>
       </div>
-      <h2>Life lessons with Kate Zaferes</h2>  
-      <p><span className="bold">From $136</span>/ person</p>     
+      <h2>{props.title}</h2>  
+      <p><span className="bold">From ${props.price}</span>/ person</p>     
     </div>
   )
 }
