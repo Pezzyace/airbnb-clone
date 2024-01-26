@@ -1,7 +1,6 @@
 
 
-export default function App(props) {
-  console.log(props.img);
+export default function App(props)  {
   return (
     <div className="contacts">
       <div className="contact-card">

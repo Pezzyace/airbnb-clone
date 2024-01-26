@@ -2,15 +2,14 @@ import './App.css';
 // import Nav from './components/nav';
 // import Hero from './components/hero';
 // import Card from './components/card';
-
 import Contact from './components/contact';
 
 function App() {
   return (
     <div className="contacts">
       {/* <Nav />
-      <Hero />
-      <Card /> */}
+      <Hero /> */}
+      {/* <Card /> */}
       <Contact 
         img="../assets/img2.png"
         name="James"
@@ -35,7 +34,6 @@ function App() {
         phoneNumber="093740974"
         email="jessica@gmail.com"
       />
-
     </div>
   );
 }
